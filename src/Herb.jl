@@ -1,5 +1,18 @@
 module Herb
 
+modules = [
+    "constraints/",
+    "core/",
+    "grammar/",
+    "interpret/",
+    "search/",
+    "specification/",
+]
+
+for m in modules
+    include(m)
+end
+
 using HerbCore
 using HerbConstraints
 using HerbGrammar
