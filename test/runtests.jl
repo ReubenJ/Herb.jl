@@ -1,29 +1,14 @@
-module HerbTest
-
-using HerbConstraints
-using HerbCore
-using HerbInterpret
-using HerbGrammar
-using HerbSearch
-using HerbSpecification
-
 using Test
-import Pkg
+using Herb
+using Herb.HerbCore: HerbCore
 
-@testset verbose=false "Herb" begin
-   @test 1==1 # dummy test
-   println("\n--- HerbConstraints tests ---")
-   Pkg.test("HerbConstraints")
-   println("\n--- HerbCore tests ---")
-   Pkg.test("HerbCore")
-   println("\n--- HerbInterpret tests ---")
-   Pkg.test("HerbInterpret")
-   println("\n--- HerbGrammar tests ---")
-   Pkg.test("HerbGrammar")
-   println("\n--- HerbSearch tests ---")
-   Pkg.test("HerbSearch")
-   println("\n--- HerbSpecification tests ---")
-   Pkg.test("HerbSpecification")
+@testset "Herb.jl" begin
+   for (root, dirs, files) in walkdir(".")
+      for f in files
+         if f == "runtests.jl" && root != "."
+            include(joinpath(root, f))
+            exit()
+         end
+      end
+   end
 end
-
-end # module

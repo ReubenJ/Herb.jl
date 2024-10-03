@@ -118,7 +118,6 @@ export
     get_grammar,
     get_starting_symbol,
     get_state,
-    get_node_at_location,
     get_hole_at_location,
     get_max_depth,
     get_max_size,

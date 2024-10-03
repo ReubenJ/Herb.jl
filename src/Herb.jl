@@ -23,7 +23,7 @@ end
 export 
     HerbCore,
     HerbConstraints,
-    HerbGrammars,
+    HerbGrammar,
     HerbInterpret,
     HerbSearch,
     HerbSpecification

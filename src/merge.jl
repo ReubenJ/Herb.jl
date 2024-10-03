@@ -22,11 +22,11 @@ for repo in repos
     run(git(["clone", url, path]))
 end
 
-for repo in repos
-    src_path = joinpath(herb_repos_dir, repo, "src")
-    new_dest_path = joinpath("src", lowercase(repo[5:end]))
-    cp(src_path, new_dest_path, force=true)
-end
+# for repo in repos
+#     src_path = joinpath(herb_repos_dir, repo, "src")
+#     new_dest_path = joinpath("src", lowercase(repo[5:end]))
+#     cp(src_path, new_dest_path, force=true)
+# end
 
 for repo in repos
     test_path = joinpath(herb_repos_dir, repo, "test")
