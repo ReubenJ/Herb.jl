@@ -1,7 +1,10 @@
 module HerbConstraints
 
-using HerbCore
-using HerbGrammar
+include("../core/HerbCore.jl")
+include("../grammar/HerbGrammar.jl")
+
+using .HerbCore
+using .HerbGrammar
 using DataStructures
 using MLStyle
 

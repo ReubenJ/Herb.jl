@@ -4,21 +4,15 @@ authors = ["Jaap de Jong <jaapdejong15@gmail.com>", "Tilman Hinnerichs <t.r.hinn
 version = "0.3.0"
 
 [deps]
-HerbConstraints = "1fa96474-3206-4513-b4fa-23913f296dfc"
-HerbCore = "2b23ba43-8213-43cb-b5ea-38c12b45bd45"
-HerbGrammar = "4ef9e186-2fe5-4b24-8de7-9f7291f24af7"
-HerbInterpret = "5bbddadd-02c5-4713-84b8-97364418cca7"
-HerbSearch = "3008d8e8-f9aa-438a-92ed-26e9c7b4829f"
-HerbSpecification = "6d54aada-062f-46d8-85cf-a1ceaf058a06"
-Pkg = "44cfe95a-1eb2-52ea-b672-e2afdf69b78f"
+AbstractTrees = "1520ce14-60c1-5f80-bbc7-55ef81b5835c"
+DataStructures = "864edb3b-99cc-5e75-8d2d-829cb0a9cfe8"
+MLStyle = "d8e11817-5142-5d16-987a-aa16d5891078"
+Random = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
+Serialization = "9e88b42a-f829-5b0c-bbe9-9e923198166b"
+StatsBase = "2913bbd2-ae8a-5f71-8c99-4fb6c76f3a91"
+TreeView = "39424ebd-4cf3-5550-a685-96706a953f40"
 
 [compat]
-HerbConstraints = "^0.2.0"
-HerbCore = "^0.3.0"
-HerbGrammar = "^0.3.0"
-HerbInterpret = "^0.1.2"
-HerbSearch = "^0.3.0"
-HerbSpecification = "^0.1.0"
 julia = "^1.8"
 
 [extras]

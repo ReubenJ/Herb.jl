@@ -5,7 +5,9 @@ using AbstractTrees
 using DataStructures # NodeRecycler
 using Serialization # grammar_io
 
-using HerbCore
+include("../core/HerbCore.jl")
+
+using .HerbCore
 
 include("grammar_base.jl")
 include("rulenode_operators.jl")
@@ -22,9 +24,6 @@ export
     ContextSensitive,
 
     ContextSensitiveGrammar,
-    AbstractRuleNode,
-    RuleNode,
-    Hole,
     NodeLoc,
 
     @cfgrammar,

@@ -2,11 +2,17 @@ module HerbSearch
 
 using DataStructures
 
-using HerbCore
-using HerbGrammar
-using HerbConstraints
-using HerbInterpret
-using HerbSpecification
+include("../core/HerbCore.jl")
+include("../grammar/HerbGrammar.jl")
+include("../constraints/HerbConstraints.jl")
+include("../interpret/HerbInterpret.jl")
+include("../specification/HerbSpecification.jl")
+
+using .HerbCore
+using .HerbGrammar
+using .HerbConstraints
+using .HerbInterpret
+using .HerbSpecification
 using MLStyle
 
 include("sampling_grammar.jl")

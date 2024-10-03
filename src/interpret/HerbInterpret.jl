@@ -1,8 +1,12 @@
 module HerbInterpret
 
-using HerbCore
-using HerbGrammar
-using HerbSpecification
+include("../core/HerbCore.jl")
+include("../grammar/HerbGrammar.jl")
+include("../specification/HerbSpecification.jl")
+
+using .HerbCore
+using .HerbGrammar
+using .HerbSpecification
 
 include("interpreter.jl")
 

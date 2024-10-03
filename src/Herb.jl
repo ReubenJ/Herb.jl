@@ -1,24 +1,24 @@
 module Herb
 
 modules = [
-    "constraints/",
-    "core/",
-    "grammar/",
-    "interpret/",
-    "search/",
-    "specification/",
+    "core/HerbCore.jl",
+    "grammar/HerbGrammar.jl",
+    "constraints/HerbConstraints.jl",
+    "interpret/HerbInterpret.jl",
+    "search/HerbSearch.jl",
+    "specification/HerbSpecification.jl",
 ]
 
 for m in modules
     include(m)
 end
 
-using HerbCore
-using HerbConstraints
-using HerbGrammar
-using HerbInterpret
-using HerbSearch
-using HerbSpecification
+# using HerbCore
+# using HerbConstraints
+# using HerbGrammar
+# using HerbInterpret
+# using HerbSearch
+# using HerbSpecification
 
 export 
     HerbCore,
